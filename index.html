@@ -12,39 +12,39 @@
     BANNER SUPERIOR - IMAGEN DE FONDO CON OVERLAY
     ============================================ -->
     <section class="hero-banner">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-        <div class="hero-badge">
-            <i class="fas fa-star"></i> Academia Preuniversitaria
-        </div>
-        <h1 class="hero-title">
-            5to <span class="highlight">San Marcos</span>
-        </h1>
-        <p class="hero-subtitle">
-            Biblioteca Virtual de Materiales Académicos para tu Preparación
-        </p>
-        <div class="hero-stats">
-            <div class="hero-stat">
-                <span class="stat-number" id="hero-courses">17</span>
-                <span class="stat-label">Cursos</span>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i> Academia Preuniversitaria
             </div>
-            <div class="hero-stat-divider"></div>
-            <div class="hero-stat">
-                <span class="stat-number">6</span>
-                <span class="stat-label">Tomos</span>
+            <h1 class="hero-title">
+                5to <span class="highlight">San Marcos</span>
+            </h1>
+            <p class="hero-subtitle">
+                Biblioteca Virtual de Materiales Académicos para tu Preparación
+            </p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-number" id="hero-courses">17</span>
+                    <span class="stat-label">Cursos</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Tomos</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Intensivos</span>
+                </div>
             </div>
-            <div class="hero-stat-divider"></div>
-            <div class="hero-stat">
-                <span class="stat-number">3</span>
-                <span class="stat-label">Intensivos</span>
+            <div class="hero-scroll">
+                <span>Explora el material</span>
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
-        <div class="hero-scroll">
-            <span>Explora el material</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- ============================================
     TOP BAR INFORMATIVA
@@ -144,6 +144,56 @@
             <div class="courses-grid" id="courses-container">
                 <!-- Cursos generados por JS -->
             </div>
+
+            <!-- ============================================
+            MÓDULO: VISTA DRIVE (Dentro del container)
+            ============================================ -->
+            <section class="drive-view-module">
+                <!-- Cabecera -->
+                <div class="drive-header">
+                    <div class="drive-breadcrumb">
+                        <i class="fas fa-folder-open"></i>
+                        <span>Mi Unidad</span>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Actualizaciones</span>
+                    </div>
+                    <div class="drive-actions">
+                        <a href="https://drive.google.com/drive/folders/1uix8_5eMd1dNDvY2GeXIRUPFphM0eqg1?usp=drive_link" 
+                           target="_blank" 
+                           class="drive-btn" 
+                           title="Abrir en Drive">
+                            <i class="fab fa-google-drive"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Barra de información -->
+                <div class="drive-info-bar">
+                    <span><i class="fas fa-folder"></i> Carpeta: <span id="drive-folder-name">Material 5to UNI - Tomo I</span></span>
+                    <span><i class="fas fa-users"></i> Acceso: Cualquier persona con el enlace</span>
+                    <span><i class="fas fa-file"></i> Archivos disponibles</span>
+                </div>
+
+                <!-- IFRAME - VISTA DE DRIVE -->
+                <div class="drive-iframe-container">
+                    <iframe 
+                        id="drive-iframe"
+                        src="https://drive.google.com/embeddedfolderview?id=1bt6BRPtEhyszC3lqudKVnvPWuFAdmG1h#grid"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Pie de página -->
+                <div class="drive-footer">
+                    <span><i class="fas fa-cloud"></i> Google Drive</span>
+                    <a href="https://drive.google.com/drive/folders/1bt6BRPtEhyszC3lqudKVnvPWuFAdmG1h" 
+                       target="_blank" 
+                       class="drive-open-btn">
+                        <i class="fab fa-google-drive"></i> Abrir en Google Drive
+                    </a>
+                </div>
+            </section>
         </div>
     </main>
 
